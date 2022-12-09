@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body id="body">
+    <div>
+        <div class="upperSection">
+            <button onclick="againBtn()" class="againBtn"> Again! </button>
+            <div class="text"> Choose Between 1 and 20 </div>
+        </div>
+        <div class="gussMyNumber"> <span> Guess my number</span></div>
+        <div class="sign">
+            <div class="signOfExclamation">
+                <span class="signOf">? </span>
+            </div>
+
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; margin-top: 100px;">
+            <div class="left-section">
+                <div><input id="input-value" class="againBtn" style="width:80px; margin-left:20px;" placeholder="Input Number"> </div>
+                <div> <button onclick="check()" class="againBtn" style="margin-left:20px"> Check</button> </div>
+            </div>
+            <div class="right-section">
+                <div id="guess" style=" background-color: rgb(128, 128, 255);
+      color:white;
+      border-radius: 8px;padding:9px 10px 5px 10px; width:100px"> start guessing...</div>
+                <div style=" background-color: rgb(128, 128, 255);
+                color:white;width:100px;
+                border-radius: 8px;padding:9px 10px 5px 10px;"> score: <span id="scores"> score</span> </div>
+                <div style=" background-color: rgb(128, 128, 255);
+                color:white ; width:150px;
+                border-radius: 8px;padding:9px 10px 5px 10px;"> highscore: <span id="highScore"> highscore </span></div>
+            </div>
+        </div>
+    </div>
+    <div class="resetbtn" > <button onclick="reset()" class="againBtn"> Reset </button> </div>
+    <script src="index.js">
+        
+    </script>
+</body>
+
+</html>
